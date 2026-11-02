@@ -1,0 +1,279 @@
+{
+ "scores": {
+  "Meridian HR Cloud": {
+   "total": 83,
+   "domains": {
+    "1 Governance and accountability": 86,
+    "2 Data protection and privacy": 93,
+    "3 Model performance and testing": 82,
+    "4 Fairness and bias": 88,
+    "5 Transparency and explainability": 79,
+    "6 Security": 87,
+    "7 Human oversight and incident response": 75,
+    "8 Legal, contractual and regulatory": 73
+   },
+   "knockouts": [],
+   "outcome": "Approve"
+  },
+  "Atlas Analytics": {
+   "total": 73,
+   "domains": {
+    "1 Governance and accountability": 82,
+    "2 Data protection and privacy": 86,
+    "3 Model performance and testing": 93,
+    "4 Fairness and bias": 63,
+    "5 Transparency and explainability": 63,
+    "6 Security": 50,
+    "7 Human oversight and incident response": 83,
+    "8 Legal, contractual and regulatory": 62
+   },
+   "knockouts": [
+    "S04"
+   ],
+   "outcome": "Conditional"
+  },
+  "QuickScreen AI": {
+   "total": 31,
+   "domains": {
+    "1 Governance and accountability": 39,
+    "2 Data protection and privacy": 39,
+    "3 Model performance and testing": 46,
+    "4 Fairness and bias": 13,
+    "5 Transparency and explainability": 21,
+    "6 Security": 27,
+    "7 Human oversight and incident response": 33,
+    "8 Legal, contractual and regulatory": 27
+   },
+   "knockouts": [
+    "P01",
+    "F01",
+    "S04"
+   ],
+   "outcome": "Reject"
+  }
+ },
+ "sensitivity": {
+  "Meridian HR Cloud": {
+   "Base": {
+    "total": 83,
+    "domains": {
+     "1 Governance and accountability": 86,
+     "2 Data protection and privacy": 93,
+     "3 Model performance and testing": 82,
+     "4 Fairness and bias": 88,
+     "5 Transparency and explainability": 79,
+     "6 Security": 87,
+     "7 Human oversight and incident response": 75,
+     "8 Legal, contractual and regulatory": 73
+    },
+    "knockouts": [],
+    "outcome": "Approve"
+   },
+   "Equal weights": {
+    "total": 81,
+    "domains": {
+     "1 Governance and accountability": 83,
+     "2 Data protection and privacy": 92,
+     "3 Model performance and testing": 83,
+     "4 Fairness and bias": 83,
+     "5 Transparency and explainability": 75,
+     "6 Security": 83,
+     "7 Human oversight and incident response": 75,
+     "8 Legal, contractual and regulatory": 75
+    },
+    "knockouts": [],
+    "outcome": "Approve"
+   },
+   "Double fairness and security": {
+    "total": 84,
+    "domains": {
+     "1 Governance and accountability": 86,
+     "2 Data protection and privacy": 93,
+     "3 Model performance and testing": 82,
+     "4 Fairness and bias": 88,
+     "5 Transparency and explainability": 79,
+     "6 Security": 87,
+     "7 Human oversight and incident response": 75,
+     "8 Legal, contractual and regulatory": 73
+    },
+    "knockouts": [],
+    "outcome": "Approve"
+   },
+   "Claims worth 0.25 not 0.5": {
+    "total": 75,
+    "domains": {
+     "1 Governance and accountability": 79,
+     "2 Data protection and privacy": 89,
+     "3 Model performance and testing": 73,
+     "4 Fairness and bias": 81,
+     "5 Transparency and explainability": 69,
+     "6 Security": 80,
+     "7 Human oversight and incident response": 63,
+     "8 Legal, contractual and regulatory": 60
+    },
+    "knockouts": [],
+    "outcome": "Approve"
+   },
+   "range": [
+    75,
+    84
+   ]
+  },
+  "Atlas Analytics": {
+   "Base": {
+    "total": 73,
+    "domains": {
+     "1 Governance and accountability": 82,
+     "2 Data protection and privacy": 86,
+     "3 Model performance and testing": 93,
+     "4 Fairness and bias": 63,
+     "5 Transparency and explainability": 63,
+     "6 Security": 50,
+     "7 Human oversight and incident response": 83,
+     "8 Legal, contractual and regulatory": 62
+    },
+    "knockouts": [
+     "S04"
+    ],
+    "outcome": "Conditional"
+   },
+   "Equal weights": {
+    "total": 71,
+    "domains": {
+     "1 Governance and accountability": 83,
+     "2 Data protection and privacy": 83,
+     "3 Model performance and testing": 92,
+     "4 Fairness and bias": 58,
+     "5 Transparency and explainability": 58,
+     "6 Security": 50,
+     "7 Human oversight and incident response": 83,
+     "8 Legal, contractual and regulatory": 58
+    },
+    "knockouts": [
+     "S04"
+    ],
+    "outcome": "Conditional"
+   },
+   "Double fairness and security": {
+    "total": 69,
+    "domains": {
+     "1 Governance and accountability": 82,
+     "2 Data protection and privacy": 86,
+     "3 Model performance and testing": 93,
+     "4 Fairness and bias": 63,
+     "5 Transparency and explainability": 63,
+     "6 Security": 50,
+     "7 Human oversight and incident response": 83,
+     "8 Legal, contractual and regulatory": 62
+    },
+    "knockouts": [
+     "S04"
+    ],
+    "outcome": "Conditional"
+   },
+   "Claims worth 0.25 not 0.5": {
+    "total": 61,
+    "domains": {
+     "1 Governance and accountability": 73,
+     "2 Data protection and privacy": 79,
+     "3 Model performance and testing": 89,
+     "4 Fairness and bias": 44,
+     "5 Transparency and explainability": 44,
+     "6 Security": 42,
+     "7 Human oversight and incident response": 75,
+     "8 Legal, contractual and regulatory": 42
+    },
+    "knockouts": [
+     "S04"
+    ],
+    "outcome": "Conditional"
+   },
+   "range": [
+    61,
+    73
+   ]
+  },
+  "QuickScreen AI": {
+   "Base": {
+    "total": 31,
+    "domains": {
+     "1 Governance and accountability": 39,
+     "2 Data protection and privacy": 39,
+     "3 Model performance and testing": 46,
+     "4 Fairness and bias": 13,
+     "5 Transparency and explainability": 21,
+     "6 Security": 27,
+     "7 Human oversight and incident response": 33,
+     "8 Legal, contractual and regulatory": 27
+    },
+    "knockouts": [
+     "P01",
+     "F01",
+     "S04"
+    ],
+    "outcome": "Reject"
+   },
+   "Equal weights": {
+    "total": 30,
+    "domains": {
+     "1 Governance and accountability": 42,
+     "2 Data protection and privacy": 42,
+     "3 Model performance and testing": 42,
+     "4 Fairness and bias": 17,
+     "5 Transparency and explainability": 17,
+     "6 Security": 25,
+     "7 Human oversight and incident response": 33,
+     "8 Legal, contractual and regulatory": 25
+    },
+    "knockouts": [
+     "P01",
+     "F01",
+     "S04"
+    ],
+    "outcome": "Reject"
+   },
+   "Double fairness and security": {
+    "total": 29,
+    "domains": {
+     "1 Governance and accountability": 39,
+     "2 Data protection and privacy": 39,
+     "3 Model performance and testing": 46,
+     "4 Fairness and bias": 13,
+     "5 Transparency and explainability": 21,
+     "6 Security": 27,
+     "7 Human oversight and incident response": 33,
+     "8 Legal, contractual and regulatory": 27
+    },
+    "knockouts": [
+     "P01",
+     "F01",
+     "S04"
+    ],
+    "outcome": "Reject"
+   },
+   "Claims worth 0.25 not 0.5": {
+    "total": 20,
+    "domains": {
+     "1 Governance and accountability": 27,
+     "2 Data protection and privacy": 27,
+     "3 Model performance and testing": 34,
+     "4 Fairness and bias": 6,
+     "5 Transparency and explainability": 10,
+     "6 Security": 13,
+     "7 Human oversight and incident response": 25,
+     "8 Legal, contractual and regulatory": 13
+    },
+    "knockouts": [
+     "P01",
+     "F01",
+     "S04"
+    ],
+    "outcome": "Reject"
+   },
+   "range": [
+    20,
+    31
+   ]
+  }
+ }
+}

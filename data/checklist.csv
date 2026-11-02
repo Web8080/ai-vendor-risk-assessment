@@ -1,0 +1,49 @@
+id,domain,question,evidence_required,weight,knockout,framework_refs
+G01,1 Governance and accountability,Name the executive accountable for AI risk and describe your AI governance structure and policy.,"AI policy, org chart",2,N,ISO 42001 5.3; NIST GOVERN 2.1
+G02,1 Governance and accountability,"Do you hold ISO/IEC 42001, ISO/IEC 27001 or SOC 2 Type II covering this product?","Certificates, scope",2,N,ISO 42001; ISO 27001
+G03,1 Governance and accountability,"Maintain an AI system inventory and risk assessment for this product, reviewed at least annually?",Risk assessment,2,N,NIST MAP 1; ISO 23894
+G04,1 Governance and accountability,"Disclose material sub-processors and foundation-model providers, with locations.",Sub-processor list,3,N,GDPR Art 28; AI Act Art 25
+G05,1 Governance and accountability,State the EU AI Act risk class you assign and your reasoning.,Classification memo,3,N,"AI Act Art 6, Annex III"
+G06,1 Governance and accountability,Describe independent assurance of AI releases (internal review board or external audit).,Review records,2,N,ISO 42001 9.2
+P01,2 Data protection and privacy,"Is our data excluded from training or tuning any model used for others, by default?","DPA clause, config",3,Y,"GDPR Art 5, 28"
+P02,2 Data protection and privacy,Is there a DPA covering AI processing and cross-border transfers?,"DPA, transfer mechanism",3,Y,"GDPR Art 28, 44"
+P03,2 Data protection and privacy,"Can data be deleted on request, including logs and derived data? Show the procedure.",Deletion procedure,2,N,GDPR Art 17
+P04,2 Data protection and privacy,Are retention periods defined and enforced?,Retention schedule,2,N,GDPR Art 5(1)(e)
+P05,2 Data protection and privacy,Has a DPIA been completed for this use case? Provide or support one.,DPIA,2,N,GDPR Art 35
+P06,2 Data protection and privacy,Is special-category data inferred or processed? How is it controlled?,Data map,2,N,GDPR Art 9
+M01,3 Model performance and testing,Provide validation evidence on data similar to our use case.,Validation report,3,N,NIST MEASURE 2.1; AI Act Art 15
+M02,3 Model performance and testing,Provide a model card or equivalent with limits and out-of-scope uses.,Model card,2,N,NIST MAP 2
+M03,3 Model performance and testing,Report accuracy by relevant subgroups and conditions with sample sizes.,Subgroup results,3,N,NIST MEASURE 2.11
+M04,3 Model performance and testing,Describe drift detection and revalidation after changes.,Monitoring procedure,2,N,NIST MEASURE 2.4
+M05,3 Model performance and testing,Can we run our own acceptance test before go-live?,Access,2,N,Local validation
+M06,3 Model performance and testing,"State uptime, latency and accuracy commitments and how they are measured.",SLA,2,N,Commercial
+F01,4 Fairness and bias,Has the system been tested for discriminatory impact on protected groups?,Bias audit,3,Y,NYC LL144; EEOC UGESP; AI Act Art 10
+F02,4 Fairness and bias,Is the audit independent and within the last 12 months?,Audit summary,2,N,NYC LL144
+F03,4 Fairness and bias,Are proxy variables identified and controlled? List features.,Feature review,2,N,AI Act Art 10(2)(f)
+F04,4 Fairness and bias,Are fairness results shared with customers for each release?,Release notes,1,N,NIST MANAGE
+F05,4 Fairness and bias,Describe your remediation process when bias is found.,Procedure,2,N,NIST MANAGE 2
+F06,4 Fairness and bias,"Do you test equal opportunity (qualified individuals), not only overall rates?",Test report,2,N,NIST MEASURE 2.11
+T01,5 Transparency and explainability,"Can the system explain, per decision, the factors that drove the output?",Sample explanation,3,N,"AI Act Art 13, 86"
+T02,5 Transparency and explainability,Are users told when they interact with AI or when AI informed a decision?,Screenshots,2,N,AI Act Art 50
+T03,5 Transparency and explainability,"Are model changes communicated in advance, with the ability to stay on a prior version?",Change policy,2,N,ISO 42001 8
+T04,5 Transparency and explainability,Is documentation sufficient for us to meet our own transparency duties?,Documentation pack,2,N,"AI Act Art 13, 26"
+T05,5 Transparency and explainability,Do you provide exportable logs for audit?,Log sample,2,N,AI Act Art 12
+T06,5 Transparency and explainability,Is there a public description of the AI features and their limits?,Public page,1,N,Transparency
+S01,6 Security,"Independent security certification (SOC 2 Type II, ISO 27001) covering the product?",Report,3,N,ISO 27001
+S02,6 Security,"Tested for AI-specific attacks: prompt injection, poisoning, extraction, adversarial inputs?",Red-team summary,3,N,OWASP LLM Top 10; NIST MEASURE 2.7
+S03,6 Security,"Role-based access to our data, logged and reviewed?",Access policy,2,N,ISO 27001
+S04,6 Security,Will you notify us of breaches within 72 hours or less?,Contract,3,Y,GDPR Art 33
+S05,6 Security,Tested business continuity and exit plan?,"BCP, exit plan",2,N,ISO 22301
+S06,6 Security,"Software supply chain controls (SBOM, dependency scanning, model provenance)?",SBOM,2,N,SLSA; NIST SSDF
+H01,7 Human oversight and incident response,"Can a human review and override any consequential output, with overrides logged?",Demo,3,Y,AI Act Art 14; GDPR Art 22
+H02,7 Human oversight and incident response,AI incident process with severity levels and timelines?,Procedure,2,N,AI Act Art 73
+H03,7 Human oversight and incident response,Kill switch or ability to suspend features quickly?,Technical description,2,N,NIST MANAGE 2.4
+H04,7 Human oversight and incident response,User training and guidance on limits and automation bias?,Training pack,1,N,AI Act Art 4
+H05,7 Human oversight and incident response,Do you disclose incidents affecting other customers where relevant to us?,Clause,2,N,Good practice
+H06,7 Human oversight and incident response,Do you provide a candidate or user appeal route support?,Description,2,N,GDPR Art 22
+L01,"8 Legal, contractual and regulatory","Do you map the product to applicable regulation (AI Act class, sector rules)?",Compliance mapping,3,N,AI Act; sector
+L02,"8 Legal, contractual and regulatory",Liability for AI errors and IP/data indemnity addressed?,Contract draft,2,N,Commercial
+L03,"8 Legal, contractual and regulatory",Audit rights and right to documentation on request?,Contract,3,N,AI Act Art 26
+L04,"8 Legal, contractual and regulatory","Service levels for accuracy, availability and support?",SLA,2,N,Commercial
+L05,"8 Legal, contractual and regulatory",Right to terminate and retrieve data if non-compliant?,Termination clause,2,N,Commercial
+L06,"8 Legal, contractual and regulatory",Insurance: cyber and professional indemnity limits?,Certificates,1,N,Commercial
